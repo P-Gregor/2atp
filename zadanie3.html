@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>JQuery cwiczenia</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script>
 		function pobierz_napis () 
 		{
@@ -15,5 +16,19 @@
 <body>
 	<div>Bardzo lubie programowac</div>
 	<button onclick="pobierz_napis()">PRZYCISK</button>
+
+<!---Wykonanie w/w przy uzyciu JQuery----->
+		<div id="info">Aplikacja by Pawel Gregor 2021</div>
+		<script>
+			$(document).ready(function()
+			{
+				$("#info").click(function()
+				{
+					var div = $(this).html();
+					alert(div)
+				});
+			});
+		</script>
+
 </body>
 </html>
